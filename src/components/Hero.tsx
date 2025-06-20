@@ -46,16 +46,16 @@ const Hero = () => {
   return <motion.div className="relative mt-16 md:mt-0 w-full" initial="hidden" animate="visible" variants={containerVariants}>
       <div className="banner-container bg-black relative overflow-hidden h-[60vh] sm:h-[70vh] md:h-[750px] w-full">
         <div className="absolute inset-0 bg-black w-full">
-          <img src="/lovable-uploads/4bfa0d71-3ed2-4693-90b6-35142468907f.png" alt="WRLDS Technologies Connected People" className={`w-full h-full object-cover opacity-70 grayscale ${isMobile ? 'object-right' : 'object-center'}`} />
+          <img src="https://images.pexels.com/photos/3814243/pexels-photo-3814243.jpeg?_gl=1*1j35ws8*_ga*MjAxMzQyMDU2OS4xNzQ2MTg4MDEw*_ga_8JE65Q40S6*czE3NTA0MzU5NjAkbzE1JGcxJHQxNzUwNDM1OTk5JGoyMSRsMCRoMA.." alt="WRLDS Technologies Connected People" className={`w-full h-full object-cover opacity-70 grayscale ${isMobile ? 'object-right' : 'object-center'}`} />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-white"></div>
         </div>
         
         <div className="banner-overlay bg-transparent pt-16 sm:pt-20 md:pt-24 w-full">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
-              <motion.h1 className="banner-title text-white" variants={itemVariants}>The Future of Smart Textile Technology is here.</motion.h1>
+              <motion.h1 className="banner-title text-white" variants={itemVariants}>Yingor Financial Royal Financial Services for Ghana.</motion.h1>
               <motion.p className="banner-subtitle text-gray-300 mt-4 sm:mt-6" variants={itemVariants}>
-                We integrate AI-powered textile sensors into clothing, footwear, and wearables.
+              Welcome to the official site of HRH, Thee Royal Warrior, AMEWODELA OSAGYEFO, Torgbi Kiti'Kata I of the Fifiawoto Meli Tsã'O Kingdom.
               </motion.p>
               <motion.div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center items-center" variants={itemVariants}>
                 {/* Styled as a button but using an anchor tag for project navigation */}
@@ -97,24 +97,24 @@ const Hero = () => {
             <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-100 flex items-center justify-center rounded-lg text-gray-500 mb-2 md:mb-3">
               <Cpu className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Smart Textiles</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Intelligent fabric sensors that seamlessly integrate into clothing and footwear.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">EKEKEVOR Financial Initiative</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Comprehensive financial inclusion program designed for community empowerment.</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
             <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-100 flex items-center justify-center rounded-lg text-gray-500 mb-2 md:mb-3">
               <Code className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Adaptive AI</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Industry-specific algorithms that transform textile sensor data into meaningful insights.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Royal Investment Programs</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Strategic investment opportunities backed by traditional authority.</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
             <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-100 flex items-center justify-center rounded-lg text-gray-500 mb-2 md:mb-3">
               <Layers className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Cross-Industry</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Solutions for sports, military, healthcare, industrial, and professional environments.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800">Community Banking</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Accessible banking services tailored for local communities.</p>
           </motion.div>
         </motion.div>
       </div>

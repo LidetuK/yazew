@@ -24,27 +24,27 @@ const Features = () => {
   const features = [
     {
       icon: <Activity className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Sports Performance",
-      description: "Specialized fabrics that analyze form, provide instant feedback, and help prevent injuries in athletic equipment.",
-      image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png"
+      title: "Competitive Rates",
+      description: "Royal-backed financial services with transparent pricing and fair terms for all community members.",
+      image: "https://images.pexels.com/photos/31835108/pexels-photo-31835108.jpeg?_gl=1*1bug6rt*_ga*MjAxMzQyMDU2OS4xNzQ2MTg4MDEw*_ga_8JE65Q40S6*czE3NTA0MzU5NjAkbzE1JGcxJHQxNzUwNDM3MzUyJGo0NCRsMCRoMA.."
     },
     {
       icon: <Shield className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Military & Defense",
-      description: "Tactical gear with embedded sensors for soldier health monitoring, environmental awareness, and enhanced safety.",
-      image: "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png"
+      title: "Economic Growth",
+      description: "Comprehensive support for business development through mentorship, training, and strategic guidance.",
+      image: "https://images.pexels.com/photos/17668871/pexels-photo-17668871.jpeg?_gl=1*lobmzj*_ga*MjAxMzQyMDU2OS4xNzQ2MTg4MDEw*_ga_8JE65Q40S6*czE3NTA0MzU5NjAkbzE1JGcxJHQxNzUwNDM3NDA4JGo1NyRsMCRoMA.."
     },
     {
       icon: <HardHat className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Industrial Safety",
-      description: "Protective workwear that detects hazards, monitors fatigue, and prevents workplace injuries through early intervention.",
-      image: "/lovable-uploads/cf8966e3-de0d-445f-9fbd-ee6c48daa7ff.png"
+      title: "Community Focused",
+      description: "Built for Ghanaians, by Ghanaians. We understand the unique needs of our local entrepreneurs.",
+      image: "https://images.pexels.com/photos/15556066/pexels-photo-15556066.jpeg?_gl=1*1o168yb*_ga*MjAxMzQyMDU2OS4xNzQ2MTg4MDEw*_ga_8JE65Q40S6*czE3NTA0MzU5NjAkbzE1JGcxJHQxNzUwNDM3NDY3JGo1OSRsMCRoMA.."
     },
     {
       icon: <Zap className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Thermal Regulation",
-      description: "Adaptive heating and cooling textiles that respond to body temperature and environmental conditions.",
-      image: "/lovable-uploads/6739bd63-bf19-4abd-bb23-0b613bbf7ac8.png"
+      title: "Royal Guarantee",
+      description: "Backed by traditional authority with transparent processes and cultural respect at the core of our operations.",
+      image: "https://images.pexels.com/photos/5671470/pexels-photo-5671470.jpeg?_gl=1*1rgexmc*_ga*MjAxMzQyMDU2OS4xNzQ2MTg4MDEw*_ga_8JE65Q40S6*czE3NTA0MzU5NjAkbzE1JGcxJHQxNzUwNDM3NDUzJGoxMiRsMCRoMA.."
     }
   ];
 
@@ -109,42 +109,42 @@ const Features = () => {
   }, []);
 
   const sensorCaseStudies = [{
-    image: "/lovable-uploads/843446fe-638e-4efb-b885-ed3cd505325a.png",
-    title: "Firefighter Safety",
-    description: "Advanced protective gear with gas, temperature, positioning, and motion sensors for safer emergency response."
+    image: "https://images.pexels.com/photos/32617905/pexels-photo-32617905.jpeg?_gl=1*b1be1k*_ga*MjAxMzQyMDU2OS4xNzQ2MTg4MDEw*_ga_8JE65Q40S6*czE3NTA0MzU5NjAkbzE1JGcxJHQxNzUwNDM3OTU4JGoxNCRsMCRoMA..",
+    title: "Women Empowerment",
+    description: "We support female entrepreneurs through tailored programs that foster inclusive leadership and create pathways for long-term success."
   }, {
-    image: "/lovable-uploads/5463c9c5-0946-4280-a14b-17636ff69a98.png",
-    title: "Industrial Worker Protection",
-    description: "Safety workwear with vibration, pressure, and heating sensors to prevent injuries and monitor environmental hazards."
+    image: "https://images.pexels.com/photos/7721902/pexels-photo-7721902.jpeg",
+    title: "Youth Development",
+    description: "We empower young leaders by providing mentorship, tools, and opportunities that inspire innovation and purpose."
   }, {
-    image: "/lovable-uploads/c5f8ee24-9815-4ebe-b65d-6f3d449feb8b.png",
-    title: "Sports Performance",
-    description: "Smart athletic wear with temperature and pressure sensors that track hydration, foot strike patterns, and performance metrics."
+    image: "https://images.pexels.com/photos/10575015/pexels-photo-10575015.jpeg?_gl=1*1uzm0h5*_ga*MjAxMzQyMDU2OS4xNzQ2MTg4MDEw*_ga_8JE65Q40S6*czE3NTA0MzU5NjAkbzE1JGcxJHQxNzUwNDM4NjEzJGo1OSRsMCRoMA..",
+    title: "Community Partnerships",
+    description: "We build strong local alliances that foster unity, drive shared progress, and empower communities to thrive, Together, we create lasting impact."
   }];
   const stepFlowItems = [{
     icon: <Microchip className="h-10 w-10 text-gray-700" />,
-    title: "WRLDS Proprietary Modules",
-    description: "Our core technology components developed in-house"
+    title: "Industrial Growth",
+    description: "Supporting manufacturing and industrial development"
   }, {
     icon: <Factory className="h-10 w-10 text-gray-700" />,
-    title: "Vetted Off-the-Shelf Hardware",
-    description: "Carefully selected components that complement our technology"
+    title: "Market Development",
+    description: "Creating platforms for local businesses to thrive"
   }, {
     icon: <Handshake className="h-10 w-10 text-gray-700" />,
-    title: "Vetted Production Partners",
-    description: "Expert manufacturing partners for quality and reliability"
+    title: "Financial Inclusion",
+    description: "Bringing banking services to rural communities"
   }];
   const sprintPhases = [{
-    name: "Planning",
+    name: "Digital Literacy",
     icon: <CheckCircle className="h-4 w-4" />
   }, {
-    name: "Development",
+    name: "Internet Connectivity",
     icon: <Code className="h-4 w-4" />
   }, {
-    name: "Testing",
+    name: "Innovation Hubs",
     icon: <Box className="h-4 w-4" />
   }, {
-    name: "Review",
+    name: "Clean Energy",
     icon: <RefreshCcw className="h-4 w-4" />
   }];
 

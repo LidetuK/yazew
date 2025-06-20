@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Crown } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
@@ -48,7 +47,10 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" alt="WRLDS Technologies Logo" className={cn("h-8 w-auto", isScrolled ? "" : "brightness-0 invert")} />
+              <Crown className={cn("h-8 w-8 mr-3", isScrolled ? "text-yingor-gold" : "text-yingor-gold")} />
+              <span className={cn("font-bold text-xl", isScrolled ? "text-gray-800" : "text-white")}>
+                Yingor Financial
+              </span>
             </Link>
           </div>
           

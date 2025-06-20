@@ -1,8 +1,7 @@
-
-import { ArrowLeft, CheckCircle, ArrowRight } from 'lucide-react';
+import { ArrowLeft, CheckCircle, ArrowRight, Activity, Shield, HardHat, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import PageLayout from '@/components/PageLayout';
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
@@ -29,7 +28,7 @@ const About = () => {
               transition={{ duration: 0.5 }} 
               className="text-4xl font-bold mb-6"
             >
-              About WRLDS Technologies
+              About Yingor Financial
             </motion.h1>
             
             <div className="prose prose-lg max-w-none">
@@ -39,7 +38,7 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 0.2 }} 
                 className="text-xl text-gray-600 mb-12"
               >
-                We're a team of innovators dedicated to revolutionizing smart textile technology for industries worldwide.
+                A Royal Vision for Community Prosperity
               </motion.p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
@@ -51,12 +50,10 @@ const About = () => {
                 >
                   <h2 className="text-3xl font-bold">Our Mission</h2>
                   <p className="text-gray-600">
-                    At WRLDS Technologies, we're on a mission to transform ordinary textiles into intelligent, 
-                    data-driven solutions that improve safety, performance, and quality of life across industries.
+                  To cultivate a future where tradition and progress go hand in hand, embracing a sustainable development model that prioritizes economic self-sufficiency, inclusive growth, and community-led governance.
                   </p>
                   <p className="text-gray-600">
-                    We believe that by embedding intelligence into everyday fabrics, we can create a more 
-                    connected, responsive, and safer world.
+                  "Central to this vision is the empowerment of youth and women, the preservation of cultural heritage, and the promotion of innovation across all sectors to build resilient communities that thrive in the modern era while honoring their roots."
                   </p>
                 </motion.div>
                 
@@ -97,88 +94,57 @@ const About = () => {
                 <h2 className="text-3xl font-bold mb-6">Our Story</h2>
                 <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
                   <p className="text-gray-600 mb-4">
-                    We started with the ambition to make an inherently scattered and complex development area modular, 
-                    smart and available to analog brands. After successfully raising millions of dollars for development, 
-                    we spent the first two years in full code mode.
+                  HRH, Thee Royal Warrior, Osagyefo, Torgbi Kiti'Kata I, is a beacon of hope and strength for the people of the Fifiawoto Meli Tsã'O Kingdom and beyond. His Majesty's leadership is marked by a unique blend of traditional wisdom and forward-thinking strategies aimed at community development and empowerment.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    The goal was to turn all the scattered hardware and building blocks into simple modules to be 
-                    assembled like Lego. During this time we took in a range of customers for whom we built prototypes - 
-                    a way for us to make sure what we built had bearing in real world use cases.
+                  This page offers an in-depth look into his life — from his early years, rise to the throne, to his current role as a visionary leader. Learn about his commitments to economic empowerment, cultural preservation, youth mentorship, and social justice.
                   </p>
                   <p className="text-gray-600">
-                    In 2023 we felt we had reached a technology level allowing us to start working on enterprise level. 
-                    Since then, we have focused on textile integrations because of the enormous potential smart textiles 
-                    have across multiple industries from healthcare to public safety.
+                  Through his guidance, the Kingdom has embarked on a path of sustainable growth and unity, creating opportunities that honor tradition while embracing innovation for the betterment of all community members.
                   </p>
                 </div>
               </motion.div>
-              
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }} 
-                animate={{ opacity: 1, y: 0 }} 
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="mb-16"
               >
-                <h2 className="text-3xl font-bold mb-6">Our Team</h2>
-                <p className="text-gray-600 mb-8">
-                  Our diverse team combines expertise in textile engineering, electronics, software development, 
-                  artificial intelligence, and industry-specific knowledge to deliver holistic solutions.
-                </p>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <h2 className="text-3xl font-bold mb-6 text-center">Why Choose Us</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                   {[
                     {
-                      name: "Felix von Heland",
-                      role: "CEO and Founder",
-                      bio: "Leading WRLDS Technologies with a vision to transform the future of smart textiles.",
-                      image: "/lovable-uploads/aa5291bd-2417-4c1e-9a02-0bcc71a92507.png"
+                      icon: <Activity className="w-10 h-10 text-gray-700" />,
+                      title: "Competitive Rates",
+                      description: "Royal-backed financial services with transparent pricing and fair terms for all community members.",
                     },
                     {
-                      name: "Niek Bijman",
-                      role: "Software Lead",
-                      bio: "Specializing in cloud infrastructure and APIs for seamless data integration.",
-                      image: "/lovable-uploads/e502f601-c519-43a8-86f5-5fa89ae50d2f.png"
+                      icon: <Shield className="w-10 h-10 text-gray-700" />,
+                      title: "Economic Growth",
+                      description: "Comprehensive support for business development through mentorship, training, and strategic guidance.",
                     },
                     {
-                      name: "Chengjie Li",
-                      role: "Hardware Lead",
-                      bio: "Expert in embedded systems engineering, leading our hardware development efforts.",
-                      image: "/lovable-uploads/3de85ddd-15e1-4216-9697-f91abb9a47ce.png"
+                      icon: <HardHat className="w-10 h-10 text-gray-700" />,
+                      title: "Community Focused",
+                      description: "Built for Ghanaians, by Ghanaians. We understand the unique needs of our local entrepreneurs.",
                     },
                     {
-                      name: "Love",
-                      role: "COO",
-                      bio: "Overseeing daily operations and ensuring business objectives are met effectively.",
-                      image: "/lovable-uploads/a9bb9110-964a-43b0-a5ab-7162140cd133.png"
+                      icon: <Zap className="w-10 h-10 text-gray-700" />,
+                      title: "Royal Guarantee",
+                      description: "Backed by traditional authority with transparent processes and cultural respect at the core of our operations.",
                     }
-                  ].map((member, i) => (
-                    <Card key={i} className="bg-gray-50 border border-gray-100 overflow-hidden">
-                      <CardContent className="p-6">
-                        <div className="flex flex-col items-center text-center">
-                          <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden">
-                            <img 
-                              src={member.image} 
-                              alt={member.name} 
-                              className="w-full h-full object-cover filter grayscale" 
-                            />
-                          </div>
-                          <h3 className="font-bold text-lg">{member.name}</h3>
-                          <p className="text-gray-500 text-sm mb-2">{member.role}</p>
-                          <p className="text-gray-600 text-sm">{member.bio}</p>
-                        </div>
-                      </CardContent>
-                    </Card>
+                  ].map((feature, i) => (
+                    <div key={i} className="text-center p-6 bg-gray-50 rounded-lg border border-gray-100">
+                      <div className="flex justify-center items-center mb-4 bg-white w-20 h-20 rounded-full mx-auto shadow-md">
+                        {feature.icon}
+                      </div>
+                      <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+                      <p className="text-gray-600">{feature.description}</p>
+                    </div>
                   ))}
                 </div>
               </motion.div>
-            </div>
-            
-            <div className="mt-16 pt-8 border-t border-gray-200">
-              <Link to="/careers" className="inline-flex items-center px-5 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all group">
-                Join Our Team
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
             </div>
           </div>
         </div>
