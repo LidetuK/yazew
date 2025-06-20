@@ -76,38 +76,38 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                    Customer Cases
+                    Our Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[400px]">
                       <li>
-                        <Link to="/projects/firecat" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">FireCat 6th SENSE</div>
-                          <p className="text-sm text-gray-500">Smart textiles for firefighter safety</p>
+                        <Link to="/services/yingor-initiative" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Yingor Financial Initiative</div>
+                          <p className="text-sm text-gray-500">Empowering local economies with strategic financial support.</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/projects/sport-retail" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Sports Performance</div>
-                          <p className="text-sm text-gray-500">Advanced tracking for athletes</p>
+                        <Link to="/services/investment-programs" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Royal Investment Programs</div>
+                          <p className="text-sm text-gray-500">Secure and prosperous investment opportunities for growth.</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/projects/workwear" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Workwear Climate Control</div>
-                          <p className="text-sm text-gray-500">Temperature regulation for extreme environments</p>
+                        <Link to="/services/community-banking" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Community Banking</div>
+                          <p className="text-sm text-gray-500">Accessible and fair banking for every member of the community.</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/projects/hockey" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Ice Hockey Elite Tracker</div>
-                          <p className="text-sm text-gray-500">Performance tracking for ice hockey</p>
+                        <Link to="/services/youth-enterprise" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Youth Enterprise Fund</div>
+                          <p className="text-sm text-gray-500">Fueling the next generation of entrepreneurs and leaders.</p>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/projects/pet-tracker" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Pet Activity Counter</div>
-                          <p className="text-sm text-gray-500">Smart collars for pet activity monitoring</p>
+                        <Link to="/services/partnerships" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Community Partnerships</div>
+                          <p className="text-sm text-gray-500">Building strong local alliances to drive shared progress.</p>
                         </Link>
                       </li>
                     </ul>
@@ -198,40 +198,40 @@ const Navbar = () => {
                 submenu.classList.toggle('hidden');
               }
             }} className={cn("flex w-full justify-between items-center px-3 py-2 rounded-md", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")}>
-              <span>Customer Cases</span>
+              <span>Our Services</span>
               <ChevronDown className="h-4 w-4" />
             </button>
             
             <div className="hidden ml-4 mt-1 space-y-1">
-              <Link to="/projects/firecat" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+              <Link to="/services/yingor-initiative" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
                 setIsMenuOpen(false);
                 window.scrollTo(0, 0);
               }}>
-                FireCat 6th SENSE
+                Yingor Financial Initiative
               </Link>
-              <Link to="/projects/sport-retail" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+              <Link to="/services/investment-programs" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
                 setIsMenuOpen(false);
                 window.scrollTo(0, 0);
               }}>
-                Sports Performance
+                Royal Investment Programs
               </Link>
-              <Link to="/projects/workwear" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+              <Link to="/services/community-banking" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
                 setIsMenuOpen(false);
                 window.scrollTo(0, 0);
               }}>
-                Workwear Climate Control
+                Community Banking
               </Link>
-              <Link to="/projects/hockey" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+              <Link to="/services/youth-enterprise" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
                 setIsMenuOpen(false);
                 window.scrollTo(0, 0);
               }}>
-                Ice Hockey Elite Tracker
+                Youth Enterprise Fund
               </Link>
-              <Link to="/projects/pet-tracker" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+              <Link to="/services/partnerships" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
                 setIsMenuOpen(false);
                 window.scrollTo(0, 0);
               }}>
-                Pet Activity Counter
+                Community Partnerships
               </Link>
             </div>
           </div>

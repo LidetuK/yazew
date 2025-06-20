@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -19,6 +18,11 @@ import Careers from "./pages/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Blog from "./pages/Blog";
 import BlogPostDetail from "./pages/BlogPostDetail";
+import YingorInitiative from "./pages/services/YingorInitiative";
+import InvestmentPrograms from "./pages/services/InvestmentPrograms";
+import CommunityBanking from "./pages/services/CommunityBanking";
+import YouthEnterpriseFund from "./pages/services/YouthEnterpriseFund";
+import CommunityPartnerships from "./pages/services/CommunityPartnerships";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -43,6 +47,11 @@ const App = () => {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPostDetail />} />
+            <Route path="/services/yingor-initiative" element={<YingorInitiative />} />
+            <Route path="/services/investment-programs" element={<InvestmentPrograms />} />
+            <Route path="/services/community-banking" element={<CommunityBanking />} />
+            <Route path="/services/youth-enterprise" element={<YouthEnterpriseFund />} />
+            <Route path="/services/partnerships" element={<CommunityPartnerships />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
