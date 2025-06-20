@@ -21,10 +21,10 @@ const Index = () => {
   return (
     <PageLayout>
       <SEO 
-        title="WRLDS - Smart Textile Technology" 
-        description="WRLDS Technologies: Pioneering smart engineering solutions with textile sensors for sports, safety, and performance monitoring."
+        title="Yingor Financial - Royal Financial Services for Ghana" 
+        description="Royal Financial Services empowering communities through innovative financial solutions rooted in traditional wisdom and modern excellence. EKEKEVOR Financial Initiative for community development."
         imageUrl="/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png"
-        keywords={['smart textiles', 'wearable technology', 'textile sensors', 'sports tech', 'safety monitoring', 'performance analytics', 'manufacturing']}
+        keywords={['yingor financial', 'royal financial services', 'ghana banking', 'community banking', 'EKEKEVOR initiative', 'micro-loans', 'youth enterprise fund', 'traditional authority']}
       />
       <Hero />
       <Features />

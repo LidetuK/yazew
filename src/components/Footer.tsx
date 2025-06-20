@@ -1,5 +1,5 @@
 
-import { ArrowRight, Linkedin } from "lucide-react";
+import { ArrowRight, Linkedin, Crown, Shield, Users, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -33,8 +33,8 @@ const Footer = () => {
       const templateParams = {
         from_name: "Website Subscriber",
         from_email: email,
-        message: `New subscription request from the website footer.`,
-        to_name: 'WRLDS Team',
+        message: `New subscription request from the Yingor Financial website footer.`,
+        to_name: 'Yingor Financial Team',
         reply_to: email
       };
       
@@ -47,7 +47,7 @@ const Footer = () => {
       
       toast({
         title: "Success!",
-        description: "Thank you for subscribing to our newsletter.",
+        description: "Thank you for subscribing to our royal financial updates.",
         variant: "default"
       });
       
@@ -66,28 +66,46 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="bg-black text-white pt-16 pb-8 w-full">
+    <footer id="contact" className="bg-yingor-primary text-white pt-16 pb-8 w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-700">
           <div className="lg:col-span-2">
-            <img 
-              src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" 
-              alt="WRLDS Technologies Logo" 
-              className="h-10 w-auto mb-6 invert" // Added invert to make logo white
-            />
+            <div className="flex items-center mb-6">
+              <Crown className="h-8 w-8 text-yingor-gold mr-3" />
+              <h2 className="text-2xl font-bold text-white">Yingor Financial</h2>
+            </div>
             <p className="text-gray-300 mb-6">
-              WRLDS Technologies provides an end-to-end platform for the creation and deployment of AI-powered smart sensor devices, giving customers 100% ownership while handling the complete technological development.
+              Royal Financial Services for Ghana - Empowering communities through innovative financial solutions rooted in traditional wisdom and modern excellence. Official platform of HRH Torgbi Kiti'Kata I of the Fifiawoto Meli Tsã'O Kingdom.
             </p>
+            <div className="grid grid-cols-2 gap-4 mb-6 text-sm">
+              <div className="flex items-center">
+                <Users className="h-4 w-4 mr-2 text-yingor-gold" />
+                <span>2,500+ Community Members</span>
+              </div>
+              <div className="flex items-center">
+                <Award className="h-4 w-4 mr-2 text-yingor-gold" />
+                <span>50+ Active Projects</span>
+              </div>
+              <div className="flex items-center">
+                <Shield className="h-4 w-4 mr-2 text-yingor-gold" />
+                <span>GHS 75M+ Economic Impact</span>
+              </div>
+              <div className="flex items-center">
+                <Crown className="h-4 w-4 mr-2 text-yingor-gold" />
+                <span>15 Regions Covered</span>
+              </div>
+            </div>
             <p className="text-gray-300 mb-6">
-              Hornsgatan 110<br />
-              117 26, Stockholm Sweden
+              Kingdom Address:<br />
+              Fifiawoto Meli Tsã'O Kingdom<br />
+              Ghana
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://www.linkedin.com/company/wrldstechnologies/" 
+                href="https://www.linkedin.com/company/yingorfinancial/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 transition-colors hover:bg-gray-700 hover:text-white"
+                className="w-10 h-10 rounded-full bg-yingor-secondary flex items-center justify-center text-gray-300 transition-colors hover:bg-yingor-gold hover:text-yingor-primary"
               >
                 <Linkedin size={20} />
               </a>
@@ -95,22 +113,26 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Company</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">Royal Services</h3>
             <ul className="space-y-3">
-              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/careers" className="text-gray-300 hover:text-white transition-colors">Careers</Link></li>
-              <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/services/ekekevor" className="text-gray-300 hover:text-yingor-gold transition-colors">EKEKEVOR Initiative</Link></li>
+              <li><Link to="/services/youth-enterprise" className="text-gray-300 hover:text-yingor-gold transition-colors">Youth Enterprise Fund</Link></li>
+              <li><Link to="/services/community-banking" className="text-gray-300 hover:text-yingor-gold transition-colors">Community Banking</Link></li>
+              <li><Link to="/services/royal-investment" className="text-gray-300 hover:text-yingor-gold transition-colors">Royal Investment Programs</Link></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Get in Touch</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">Join the Royal Vision</h3>
+            <p className="text-gray-300 mb-4 text-sm">
+              Stay informed about our kingdom's prosperity initiatives and upcoming events.
+            </p>
             <form className="space-y-4" onSubmit={handleSubscribe}>
               <div>
                 <input 
                   type="email" 
-                  placeholder="Your email" 
-                  className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 text-white placeholder-gray-400"
+                  placeholder="Your email for royal updates" 
+                  className="w-full px-4 py-2 bg-yingor-secondary border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yingor-gold text-white placeholder-gray-400"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   disabled={isSubmitting}
@@ -118,12 +140,12 @@ const Footer = () => {
               </div>
               <button 
                 type="submit" 
-                className="w-full px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-4 py-2 bg-yingor-gold text-yingor-primary font-semibold rounded-md hover:bg-yellow-500 transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Subscribing..." : (
                   <>
-                    Subscribe
+                    Subscribe to Royal Updates
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </>
                 )}
@@ -134,10 +156,11 @@ const Footer = () => {
         
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} WRLDS Technologies. All rights reserved.
+            © {new Date().getFullYear()} Yingor Financial - Royal Financial Services for Ghana. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            <Link to="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/privacy-policy" className="text-sm text-gray-400 hover:text-yingor-gold transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="text-sm text-gray-400 hover:text-yingor-gold transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

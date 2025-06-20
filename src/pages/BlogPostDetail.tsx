@@ -32,7 +32,7 @@ const BlogPostDetail = () => {
   return (
     <PageLayout>
       <SEO 
-        title={`${post.title} - WRLDS`}
+        title={`${post.title} - Yingor Financial`}
         description={post.metaDescription || post.excerpt}
         imageUrl={post.imageUrl}
         keywords={post.keywords}
@@ -53,7 +53,7 @@ const BlogPostDetail = () => {
               className="absolute inset-0 w-full h-full object-cover filter grayscale"
             />
           )}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-yingor-primary/80 via-yingor-primary/60 to-yingor-primary/80"></div>
           
           <div className="banner-overlay">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex items-center justify-start md:justify-center">
